@@ -21,9 +21,9 @@ app.use((req, res, next) => {
 app.use(express.json()); // todo dato que viene al servidor es en formato JSON
 
 // Llamado a la aplicacion
-app.use((req, res) => {
-    res.send("<html><body><h1>Hola Mundo</h1></body></html>");
-});
+//app.use((req, res) => {
+//    res.send("<html><body><h1>Hola Mundo</h1></body></html>");
+//});
 
 //Routes
 app.use("/api/waterq", require("./routes/waterq.routes"));

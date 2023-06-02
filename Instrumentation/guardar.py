@@ -1,13 +1,13 @@
 import requests
 
-url = 'localhost:5000/api/waterq'
+url = 'http://localhost:5000/api/waterq'
 objeto =  {"place": "Medellin",
-           "station": 1,
-            "turbidity": 20,
-            "color": [10,20,30],
-            "conductivity":45,
-            "PH":7,
-            "temperature":27}
+           "station": 2,
+            "turbidity": 31,
+            "color": [11,22,30],
+            "conductivity":20,
+            "PH":8,
+            "temperature":26}
 
 resp = requests.post(url, json=objeto)
 print(resp.text)
